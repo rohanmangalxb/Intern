@@ -1,0 +1,183 @@
+/*Units:
+1in = 96px = 2.54cm
+1px = 1/96in 
+1pt = 1/72in
+
+%: relative to parent element;
+em: relative to the font size of the element font!;
+rem: Relative to font-size of the root element: 
+*/
+
+/* 
+grid: arranges items in rows and columns in specified dimensions
+
+defining grid: grid-template-{rows or columns}
+defining dimensions: grid-template-columns: 200px 100px 250px - creates three columns with given dimensions,
+
+we can use fr as well instead of px. fr defines dimension with respect to ratio of available space.
+Ex: 1fr 3fr 2fr, assume full width = 60px. then 1st column = 10px, 2nd = 30px and last = 20px.
+
+to repeat fixed dimension just use repeat({number of times}, {dimension})
+EX: grid-template-columns: repeat(10, 1fr)
+
+// to size opposite row or column against template:
+grid-auto-rows: ...;
+
+we can use minmax for sizing tracks, it adjust minimum and maximum value.
+Ex: minmax(210px, auto) - this set min value to 210px and maximum relative to content added in it as set to auto.
+
+//Grid has numbers assigned at each line to track its position. 
+Ex: we have a grid with 3 cols and 2 rows, from left to right: line num goes as {1, 2, 3} and from top to bottom {1, 2}
+
+//
+positioning grid based on these lines:
+grid-templates-columns: repeat(4, 1fr);
+.box1{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;    
+
+  //Short: grid-column: 1/4
+           grid-rows: 1/2
+}
+
+.box2 {
+  grid-column-start: 1;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+*/
+
+* {
+    font-size: 105%;
+}
+
+h1{
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #002d978b;
+    width: 100%;
+    height: 10vh;
+    gap: 10px;
+    margin: 0;
+    /* padding: 10px; */
+}
+
+.contact-info {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    color: rgb(0, 255, 68);
+}
+
+.contact-info span {
+    margin-left: 10px;
+    color: rgb(55, 0, 255);
+
+}
+
+.mail,
+.contact {
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    font-size: 50px;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
+.manufacturing-consent-regular {
+    font-family: "Manufacturing Consent", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+body {
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/022/029/708/small/neon-corridor-geometric-background-photo.jpg");
+
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-family: "Manufacturing Consent", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.contact-info a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(251, 255, 0);
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+}
+
+.main p {
+    width: 75%;
+}
+
+img {
+    border-style: groove;
+    border-color: rgb(239, 163, 69);
+    border-width: 4px;
+    border-radius: 5px;
+}
+
+img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all 0.3s ease-out;
+}
+
+strong {
+    margin: 0 10px;
+    width: 55px;
+}
+
+
+@media (width <=720px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .contact-info {
+        gap: 10px;
+    }
+}
+
+button {
+    width: 100%;
+    margin: 10px 0;
+    height: 40px;
+    border: none;
+    font-weight: bold;
+    font-size: 19px;
+    background-color: aqua;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: blueviolet;
+
+}
+
+button:active {
+    cursor: pointer;
+    background-color: cadetblue;
+}
