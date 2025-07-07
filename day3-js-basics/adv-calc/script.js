@@ -26,9 +26,12 @@ document.querySelector(".cl").addEventListener('click', ()=>{
 
 document.querySelector(".eq").addEventListener('click', () =>{
     try{
+        if(disp.innerHTML.slice(-1) == 0 && opCol.includes(disp.innerHTML.slice(-2, -1))){
+            throw new Error("Division not possible")
+        }
         disp.innerHTML = eval(disp.innerHTML);
     }
-    catch(err){
-        alert(err)
+    catch(Error){
+        alert(Error)
     }
 })
