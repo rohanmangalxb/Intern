@@ -28,10 +28,12 @@ document.querySelector(".eq").addEventListener('click', () =>{
     try{
         if(disp.innerHTML.slice(-1) == 0 && opCol.includes(disp.innerHTML.slice(-2, -1))){
             throw new Error("Division not possible")
+        } else{
+            disp.innerHTML = eval(disp.innerHTML);
         }
-        disp.innerHTML = eval(disp.innerHTML);
     }
     catch(Error){
+        disp.innerHTML = "0"
         alert(Error)
     }
 })
