@@ -9,4 +9,5 @@
 ## Day - 3
 - [day3-js-basics: Task 1 (Age Calc)](https://rohanmangalxb.github.io/Intern/day3-js-basics/task1/)
 - [day3-js-basics: Task 2 (Simple Calc)](https://rohanmangalxb.github.io/Intern/day3-js-basics/task2)
+- [day3-js-basics: Self (Advanced Calc)](https://rohanmangalxb.github.io/Intern/day3-js-basics/adv-calc)
 
