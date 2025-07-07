@@ -1,10 +1,10 @@
 ## Day - 1
 
-[day1-about-me](https://rohanmangalxb.github.io/Intern/day1-about-me)
+- [day1-about-me](https://rohanmangalxb.github.io/Intern/day1-about-me)
 
 ## Day - 2
 
-[day2-about-me-styled](https://rohanmangalxb.github.io/Intern/day2-about-me-styled)
+- [day2-about-me-styled](https://rohanmangalxb.github.io/Intern/day2-about-me-styled)
 
 ## Day - 3
 - [day3-js-basics: Task 1 (Age Calc)](https://rohanmangalxb.github.io/Intern/day3-js-basics/task1/)
