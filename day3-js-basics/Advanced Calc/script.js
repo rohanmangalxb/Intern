@@ -1,0 +1,34 @@
+let disp = document.querySelector(".display")
+const btns = (document.querySelectorAll(".b1"));
+disp.innerHTML = "0";
+// const opr = (document.querySelector(".operations").children);
+let opCol = ['+','-','*','/'];
+btns.forEach(e => {
+    e.addEventListener("click", ()=>{ 
+        let current = disp.innerHTML;
+        let val = e.innerHTML;
+
+        if(opCol.includes(val) && opCol.includes(current.slice(-1))){
+            disp.innerHTML = current.slice(0, -1) + val;
+        }
+        else {
+            if(disp.innerHTML == "0"){
+                disp.innerHTML = "";
+            }
+            disp.innerHTML += val;
+        }
+    })
+})
+
+document.querySelector(".cl").addEventListener('click', ()=>{
+    disp.innerHTML = "0";
+})
+
+document.querySelector(".eq").addEventListener('click', () =>{
+    try{
+        disp.innerHTML = eval(disp.innerHTML);
+    }
+    catch(err){
+        alert(err)
+    }
+})
