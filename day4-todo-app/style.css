@@ -97,4 +97,7 @@ button:active{
 .Tasks{
     height: 270px;
     overflow-y: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
