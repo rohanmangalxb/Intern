@@ -1,0 +1,100 @@
+body{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(200, 255, 200);
+}
+
+.container{
+    width: 92vw;
+
+}
+.heading{
+    height: 10vh;
+    margin-bottom: 20px;
+    text-align: center;
+    align-content: center;
+    font-weight: bolder;
+    font-size: 24px;
+    background-color: azure;
+}
+
+
+.add{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(85, 80, 240);
+
+    width: 100%;
+    border-radius: 10px;
+
+    height: auto;
+    
+    padding: 10px;
+}
+
+label{
+    display: block;
+    font-size: 20PX;
+    font-weight: bold;
+    margin:5px auto;
+}
+
+label:first-child{
+    margin-top: 0;
+}
+
+#task, #deadline, #time{
+    border: none;
+    width: 50%;
+    padding: 8px;
+    font-size: 15px;
+    padding-left: 6px;
+    border-radius: 4px;
+}
+
+#deadline, #time{
+    width: 20%;
+}
+
+#task:focus{
+    outline: 2px, auto, rgba(142, 142, 235, 0.744);
+}
+
+.Lpriority{
+  padding: 10px;
+width: 60px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    display: block;
+    background-color: antiquewhite;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 4px;
+    color: white;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+
+}
+
+button:hover{
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: rgb(241, 198, 140);
+}
+
+button:active{
+    background-color: rgba(240, 168, 74, 0.792);
+}
+
+
+.Tasks{
+    height: 270px;
+    overflow-y: auto;
+}

@@ -1,0 +1,52 @@
+.card{
+    background-color: rgb(235, 255, 132);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.card>*{
+    padding-bottom: 10px;
+}
+
+.htext{
+    display: inline-block;
+    width: 150px;
+}
+
+.noT{
+    font-size: 25px;
+    text-align: center;
+    color: brown;
+    font-weight: bold;
+}
+
+.clear{
+    position: relative;
+}
+
+.clear span{
+    position: absolute;
+    right: 10px;
+    bottom: 6px;
+    background-color: aquamarine;
+    padding: 8px;
+    border-radius: 4px;
+}
+.clear span:hover{
+    cursor: pointer;
+    transform: scale(1.012);
+}
+
+.card .rmCard{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+    top: 40%;
+}
+.card .rmCard:hover{
+    cursor: pointer;
+    color: blue;
+}

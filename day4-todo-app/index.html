@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="task-card.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="heading">Welcome to ToDo List</div>
+
+        <div class="add">
+            <form>
+                <label for="task">Enter your Task<x style="color: red;">*</x>: </label>
+                <input type="text" name="task" id="task" placeholder="Enter Your Task Here" required>
+
+                <label for="deadline">Deadline for Task: </label>
+                <input type="date" name="deadline" id="deadline">
+
+                <input type="time" name="time" id="time">
+
+                <label for="priority">Task Priority<x style="color: red;">*</x>: </label>
+                <input type="radio" name="priority" class="Lpriority" id="high" value="High" required>High
+                <input type="radio" name="priority" class="Lpriority" id="medium" value="Medium">Medium
+                <input type="radio" name="priority" class="Lpriority" id="low" value="Low">Low
+
+                <div class="btn">
+                    <button class="submit">Add Task</button>
+                </div>
+            </form>
+        </div>
+
+        <hr>
+        <div class="clear">
+            <h1>Task List:</h1>
+            <span class="delete">Clear All</span>
+        </div>
+        <hr>
+
+        <div class="Tasks">
+            <div class="card">
+
+                <div class="rmCard">
+                    <img src="https://cdn-icons-png.flaticon.com/512/6861/6861362.png" alt="delete" width="25px">
+                    <span>Cancel</span>
+                </div>
+
+                <div class="name"><b class="htext">Task: </b>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, earum.</div>
+                <div class="deadline"><b class="htext">Deadline-Date: </b>Lorem ipsum dolor sit.</div>
+                <div class="deadline"><b class="htext">Deadline-Time: </b>Lorem, ipsum.</div>
+                <div class="priority"><b class="htext">Priority: </b>Lorem.</div>
+            </div>
+            <div class="card">
+                <div class="rmCard">
+                    <img src="https://cdn-icons-png.flaticon.com/512/6861/6861362.png" alt="delete" width="25px">
+                    <span>Cancel</span>
+                </div>
+
+                <div class="name"><b class="htext">Task: </b>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, earum.</div>
+                <div class="deadline"><b class="htext">Deadline-Date: </b>Lorem ipsum dolor sit.</div>
+                <div class="deadline"><b class="htext">Deadline-Time: </b>Lorem, ipsum.</div>
+                <div class="priority"><b class="htext">Priority: </b>Lorem.</div>
+            </div>
+            <div class="card">
+                <div class="rmCard">
+                    <img src="https://cdn-icons-png.flaticon.com/512/6861/6861362.png" alt="delete" width="25px">
+                    <span>Cancel</span>
+                </div>
+
+
+                <div class="name"><b class="htext">Task: </b>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, earum.</div>
+                <div class="deadline"><b class="htext">Deadline-Date: </b>Lorem ipsum dolor sit.</div>
+                <div class="deadline"><b class="htext">Deadline-Time: </b>Lorem, ipsum.</div>
+                <div class="priority"><b class="htext">Priority: </b>Lorem.</div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
