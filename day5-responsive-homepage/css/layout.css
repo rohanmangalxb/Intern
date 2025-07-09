@@ -1,0 +1,271 @@
+/* .tektur-<uniquifier> {
+    font-family: "Tektur", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+} */
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.1rem;
+}
+
+svg {
+    position: fixed;
+    background-color: red;
+    width: 30px;
+    border-radius: 50%;
+    right: 10px;
+    top: 70px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+
+body>* {
+    margin-bottom: 20px;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+.about {
+    padding: 10px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(107, 205, 138);
+    color: red;
+}
+
+h3 {
+    background-color: aqua;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.05em;
+    font-style: oblique;
+}
+
+.text {
+    width: 95%;
+}
+
+.about ul {
+    margin-left: 30px;
+}
+
+.about li {
+    font-weight: normal;
+    font-style: italic;
+
+    font-family: serif;
+}
+
+
+
+.contactme {
+    padding: 20px;
+    height: 77vh;
+}
+
+.contactme label {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+fieldset {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: antiquewhite;
+}
+
+legend {
+    text-align: center;
+    color: red;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 18px;
+    width: 120px;
+}
+
+input {
+    display: block;
+    margin-bottom: 20px;
+}
+
+#name,
+#email,
+textarea,
+#submit {
+    width: 60%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+input:focus,
+textarea:focus {
+    outline: 2px solid red;
+}
+
+.final {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#submit {
+    width: 80px;
+    background-color: aquamarine;
+
+}
+
+#submit:hover {
+    background-color: rgb(24, 255, 178);
+    cursor: pointer;
+}
+
+#submit:focus {
+    outline: none;
+}
+
+
+
+header {
+    position: relative;
+    margin-bottom: 70px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: rgba(255, 78, 24, 0.8);
+    display: flex;
+    justify-content: space-between;
+    transition: background-color 0.3s ease;
+
+}
+
+nav div {
+    padding: 20px;
+}
+
+.title {
+    padding-left: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.title a {
+    text-decoration: none;
+    -webkit-text-stroke: 1px rgb(255, 0, 0);
+}
+
+.title,
+.contact li {
+    cursor: pointer;
+}
+
+.contact li:hover {
+    color: blue;
+}
+
+.contact {
+    min-width: 25%;
+}
+
+.contact ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+li {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    overflow: auto;
+}
+
+.heading {
+    background-color: aqua;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.05em;
+    font-style: oblique;
+}
+
+.inter {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 200px;
+}
+
+
+img {
+    width: 30vw;
+    border-radius: 10px;
+    box-shadow: 0 0 80px rgba(30, 33, 208, 0.6)
+}
+
+
+
+@media (width <=600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .inter {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    section {
+        justify-content: flex-start
+    }
+
+    .about{
+        justify-content: flex-start;
+        overflow: auto;
+    }
+    .title{
+        text-align: center;
+    }
+    nav div{
+        padding: 5px;
+    }
+}
