@@ -22,7 +22,11 @@ document.querySelector("svg").addEventListener("click", () => {
     })
 })
 
+function isValidEmail(){
+    const eformat = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return(eformat.test(email));
 
+}
 
 document.querySelector("#submit").addEventListener("click", (e) => {
     e.preventDefault();
@@ -39,6 +43,11 @@ document.querySelector("#submit").addEventListener("click", (e) => {
         if (email == "") {
             throw new Error("Enter your email!")
         }
+
+        if(!isValidEmail()){
+            throw new FormatError("Incorrect email format!")
+        }
+
         if (message == "") {
             throw new Error("Enter your message!")
         }
