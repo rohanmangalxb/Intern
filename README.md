@@ -15,3 +15,6 @@
 
 - [day4-todo-app](https://rohanmangalxb.github.io/Intern/day4-todo-app)
 
+## Day - 5
+
+- [day5-responsive-homepage](https://rohanmangalxb.github.io/Intern/day5-responsive-homepage)
