@@ -1,0 +1,10 @@
+
+
+*{
+    font-size: 1.1rem;
+}
+
+.image{
+    box-shadow: 0 0 40px rgba(255, 0, 0, 0.512);
+    height: fit-content;
+}
