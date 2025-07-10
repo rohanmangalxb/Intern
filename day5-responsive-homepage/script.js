@@ -45,7 +45,7 @@ document.querySelector("#submit").addEventListener("click", (e) => {
         }
 
         if(!isValidEmail()){
-            throw new FormatError("Incorrect email format!")
+            throw new Error("Incorrect email format!")
         }
 
         if (message == "") {
