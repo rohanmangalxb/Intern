@@ -1,0 +1,164 @@
+* {
+    font-size: 1.1rem;
+}
+
+/*NAVBAR*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.725);
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+}
+
+.logo {
+    margin: auto 4px;
+    font-weight: bold;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    margin: auto 50px;
+    list-style: none;
+    gap: 10px;
+}
+
+.home_button {
+    cursor: pointer;
+}
+
+.home_button:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    color: rgba(16, 185, 129, 1);
+}
+
+.About_button {
+    cursor: pointer;
+}
+
+.About_button:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    color: rgba(16, 185, 129, 1);
+}
+
+
+
+
+/*HERO and ABOUT*/
+
+.container {
+    min-height: 100vh;
+    padding-bottom: 6px;
+}
+
+#ABOUT {
+    background-color: rgba(167, 243, 208, 0.3);
+}
+
+#HERO {
+    background-color: rgba(254, 243, 199, 0.4);
+}
+
+.heading {
+    text-align: center;
+    padding-top: 70px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: serif;
+}
+
+.Hsubtext {
+    display: flex;
+    padding: 30px;
+    gap: 10px;
+    align-items: center;
+}
+
+.Asubtext {
+    padding: 30px;
+}
+
+img {
+    width: 50%;
+    background-size: contain;
+    box-shadow: 0 0 40px rgba(37, 73, 204, 0.512);
+    height: fit-content;
+}
+
+.skills {
+    margin-top: 60px;
+    background-color: rgba(240, 171, 252, 1);
+    border-radius: 20px;
+    padding: 24px;
+}
+
+.skill_title {
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    padding-left: 60px;
+    margin-bottom: 30px;
+}
+
+.skills ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 24px;
+    color: red;
+    padding-left: 90px;
+    font-family: monospace;
+}
+
+/*Button*/
+
+.more {
+    text-align: center;
+    margin: auto 24px;
+    font-style: italic;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.more button {
+    margin-top: 40px;
+    border-radius: 12px;
+    padding: 8px;
+}
+
+.more button:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+}
+
+.more a {
+    color: rgb(231, 123, 22);
+    text-decoration: none;
+}
+
+
+.more a:hover {
+    color: rgb(255, 0, 0);
+    text-decoration: underline;
+}
+
+@media (max-width: 750px){
+    .Hsubtext{
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 400px){
+    nav{
+        flex-direction: column;
+    }
+    .logo{
+        text-align: center;
+    }
+}
