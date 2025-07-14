@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.AContainer{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 90vh;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 2%;
+}
+
+.hide{
+    display: none;
+}
