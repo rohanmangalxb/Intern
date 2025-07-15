@@ -19,6 +19,3 @@
 
 - [day5-responsive-homepage](https://rohanmangalxb.github.io/Intern/day5-responsive-homepage)
 
-## Day - 6
-
-- [day6-react-intro](https://rohanmangalxb.github.io/Intern/day6-react-intro/react-intro/)
