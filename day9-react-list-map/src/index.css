@@ -92,3 +92,24 @@ input[type="checkbox"]{
   width: 70px;
   margin-bottom: 10px;
 }
+
+
+.newUser{
+  padding: 6px;
+  position: fixed;
+  bottom: 40px;
+  font-size: 18px;
+  left: 85%;
+  border: 2px solid blue;
+  border-radius: 5px;
+  background-color: #ff000077;
+  cursor: pointer;
+
+  transition: all 0.5s ease;
+}
+
+.newUser:hover{
+  transform: scale(1.05);
+  background-color: #f33636;
+
+}
