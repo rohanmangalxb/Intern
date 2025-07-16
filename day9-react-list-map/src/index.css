@@ -31,6 +31,20 @@
   margin: 10px 20px;
 }
 
+.sort-button{
+  border: none;
+  background-color: rgba(113, 113, 253, 0.678);
+  padding: 0 1% 0 1%;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+
+.sort-button:hover{
+  transform: scale(1.05);
+}
+
 .filter{
   display: flex;
   background-color: red;
@@ -53,7 +67,7 @@ input[type="checkbox"]{
 #search{
   margin: 0;
   padding: 10px;
-  width: 90%;
+  width: 85%;
   border: none;
   border-radius: 4px;
   font-size: 14px;
@@ -63,19 +77,7 @@ input[type="checkbox"]{
   outline: 2px solid red;
 }
 
-.sort{
-  border: none;
-  background-color: rgba(113, 113, 253, 0.678);
-  padding: 0 1% 0 1%;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.5s ease;
 
-}
-
-.sort:hover{
-  transform: scale(1.05);
-}
 
 .list {
   display: grid;
