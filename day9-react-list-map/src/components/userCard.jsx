@@ -1,11 +1,12 @@
 import React from 'react'
 
 const userCard = (user) => {
+
   return (
     <div>
       <div className='username flex'>
         <div className="title">Name: </div>
-        <div className="name">{user.name}</div>
+        <div className="name">{user.name.charAt(0).toUpperCase() + user.name.slice(1)}</div>
       </div>
 
 
