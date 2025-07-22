@@ -1,0 +1,101 @@
+.Nav-Cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: red;
+    padding: 14px;
+    font-weight: bold;
+}
+
+.toggle-btn {
+    background-position: bottom;
+    position: relative;
+    border: none;
+    border-radius: 50px;
+    width: 80px;
+    height: 30px;
+    /* padding: 10px; */
+    cursor: pointer;
+    font-family: serif;
+    transition: all 0.3s ease;
+}
+
+
+
+.toggle-btn:hover {
+    transform: scale(1.1);
+}
+
+.toggle-btn:focus {
+    outline: none;
+}
+
+.theme-icon-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.theme-icon-container img {
+    border-radius: 50%;
+    transition: transform 1s ease, opacity 1s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.toggle-btn.light .dark-img img {
+    opacity: 1;
+    transform: translateX(0) rotate(-360deg);
+}
+
+.toggle-btn.light {
+    background-image: url('https://img.pikbest.com/backgrounds/20220119/red-and-blue-gradient-light-effect-simple-theme-background_6241508.jpg!bw700');
+
+    transition: background-image 0.6s ease-in;
+}
+
+.toggle-btn.dark {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0__wjv72Y8T4aG6UjSlPqsAPr4LYJobo90hBcALpRUI4JFBRadmaQx450DENMSYfPb6M&usqp=CAU');
+    transition: background-image 0.6s ease-out;
+}
+
+.toggle-btn.light .light-img img {
+    opacity: 0;
+    transform: translateX(0) rotate(-360deg);
+}
+
+.toggle-btn.dark .light-img img {
+    opacity: 1;
+    transform: translateX(50px);
+}
+
+.toggle-btn.dark .dark-img img {
+    opacity: 0;
+    transform: translateX(50px);
+}
+
+.Body {
+    font-size: 20px;
+    height: 91vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: themeVal 1s linear 100ms;
+}
+
+.light {
+    background-color: white;
+    color: black;
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}
+
+.light,
+.dark {
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
